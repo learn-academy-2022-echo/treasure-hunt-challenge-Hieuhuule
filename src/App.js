@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './App.css'
 import Square from './components/Square'
+import './App.css'
 
 const App = () => {
 
@@ -13,10 +13,10 @@ const App = () => {
   return (
     <>
       <h1>Treasure Hunt Game</h1>
-      <div className='boardgame"'>
+      <div className='boardgame'>
         {board.map((value, index) => {
           return (
-            <Square value={value} index={index} handleGamePlay={handleGamePlay}/>
+            <Square value={value} index={index} handleGamePlay={handleGamePlay} />
           )
         })}
       </div>
