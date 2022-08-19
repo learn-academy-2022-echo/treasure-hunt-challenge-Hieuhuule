@@ -3,16 +3,16 @@
     width: 620px;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-
-.square {
+  }
+  
+  .square {
     border: 2px solid black;
     height: 200px;
     width: 200px;
     font-size: 11rem;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  h1 {
     text-align: center;
-}
+  }
