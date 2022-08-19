@@ -7,7 +7,12 @@ const App = () => {
   const [board, setBoard] = useState(["?", "?", "?", "?", "?", "?", "?", "?", "?"])
 
   const handleGamePlay = (index) => {
-    alert(index)
+    if (board[index] === "?" ) {
+      board[index] = "X"
+      setBoard([board]) // problem line
+      alert(board)
+
+    }
   }
 
   return (
@@ -16,7 +21,10 @@ const App = () => {
       <div className='boardgame'>
         {board.map((value, index) => {
           return (
-            <Square value={value} index={index} handleGamePlay={handleGamePlay} />
+            <Square 
+              value={value} 
+              index={index} 
+              handleGamePlay={handleGamePlay} />
           )
         })}
       </div>
